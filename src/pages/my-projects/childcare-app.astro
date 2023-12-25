@@ -1,11 +1,10 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-
-import ChildCareApp from "../../components/projects/ChildcareApp.astro";
-
 import { AstroSeo } from "@astrolib/seo";
 import ChildcareHeader from "../../components/headers/ChildcareHeader.astro";
-import ChildcareFeatures from "../../components/features/ChildcareFeatures.astro";
+import ChildcareFeaturesTwo from "../../components/features/ChildcareFeaturesTwo.astro";
+import VideoPlayer from "../../components/VideoPlayer";
+
 ---
 
 <!---
@@ -14,5 +13,5 @@ Use AstroSeo in all the pages you want different Seo than the index page
 
 <BaseLayout title="Childcare App">
   <ChildcareHeader/>
-  <ChildcareFeatures/>
+  <ChildcareFeaturesTwo client:load/>
 </BaseLayout>
