@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import HeaderOne from "../components/headers/HeaderOne.astro";
+import LogoCloudOne from "../components/testimonials/LogoCloudOne.astro";
+import FeatureOne from "../components/features/FeatureOne.astro";
+import FeatureThree from "../components/features/FeatureThree.astro";
+import FeatureFour from "../components/features/FeatureFour.astro";
+
+import TestimonialTwo from "../components/testimonials/TestimonialTwo.astro";
+import PricingOne from "../components/pricing/PricingOne.astro";
+import PricingOneExtended from "../components/pricing/PricingOneExtended.astro";
+import FaqOne from "../components/infopages/FaqOne.astro";
+import CtaOne from "../components/cta/CtaOne.astro";
+
+import { AstroSeo } from "@astrolib/seo";
+import TestCarousel from "../components/testimonials/TestCarousel.astro";
+import Speaker from "../components/events/Speaker.astro";
+---
+
+<!---
+Use AstroSeo in all the pages you want different Seo than the index page
+-->
+
+<BaseLayout title="Home">
+  <HeaderOne />
+  <div class="dark:bg-none bg-[url('/images/backgrounds/bg-subtle-2-light-1440w.jpg')] pb-[100px] bg-contain bg-no-repeat bg-right-top h-full ">
+    <Speaker />
+    <TestCarousel />
+  </div>
+
+</BaseLayout>

@@ -1,0 +1,441 @@
+<section>
+  <div
+    x-data="{duration: 'monthly'}"
+    class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-end max-w-7xl">
+      <div>
+        <h2 class="inline-flex items-center text-blue-600">
+          <span class="text-base font-medium tracking-tight">Pricing</span>
+        </h2>
+        <h2
+          class="text-purple-900 font-semibold tracking-tighter lg:text-5xl mt-6 text-3xl">
+          Pricing
+        </h2>
+      </div>
+      <div
+        class="w-full border bg-white overflow-hidden inline-flex mt-6 p-0.5 rounded-full max-w-xs shadow-sm z-0 ml-auto">
+        <button
+          id="monthly-pricing-button"
+          class="block w-full px-8 py-2 text-xs font-medium transition border border-transparent rounded-full text-purple-900"
+          @click="duration = 'monthly'"
+          :class="duration == 'monthly' ? 'bg-gray-100 border text-purple-900 ' : ''"
+          type="button">Monthly</button
+        >
+        <button
+          id="annual-pricing-button"
+          class="block w-full px-8 py-2 text-xs font-medium transition border border-transparent rounded-full text-purple-900"
+          @click="duration = 'annual'"
+          :class="duration == 'annual' ? 'bg-gray-100 border text-purple-900 ' : ''"
+          type="button">Annual</button
+        >
+      </div>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 gap-6 lg:grid-cols-2">
+      <div>
+        <div
+          class="grid items-center justify-center w-full grid-cols-1 p-6 lg:p-8 lg:grid-cols-2 bg-slate-50 rounded-t-3xl">
+          <div>
+            <h2 class="text-lg text-purple-900">Basic plan</h2>
+            <p class="mt-4 text-sm text-slate-500">
+              Suitable for those that want to grow steadily.
+            </p>
+          </div>
+          <div class="lg:ml-auto flex-col text-right">
+            <p class="text-5xl font-light tracking-tight text-purple-900">
+              $<span x-text="annual ? '8.00' : '15.00'">15.00</span>
+            </p>
+            <p class="text-sm text-slate-500">
+              per month <span x-cloak x-show="annual">(billed annually)</span>
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-8 bg-slate-50 rounded-b-3xl">
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+            <ul
+              role="list"
+              class="order-last mt-10 flex flex-col gap-y-3 text-sm text-slate-500">
+              <li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Connect unlimited websites</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">15 bank accounts</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Track 200 credit cards</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Analytics support</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Export 24 months data</span>
+              </li>
+            </ul>
+            <ul
+              role="list"
+              class="order-last mt-3 lg:mt-10 flex flex-col gap-y-3 text-sm text-slate-500">
+              <li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Connect unlimited websites</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">15 bank accounts</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Track 200 credit cards</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Analytics support</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Export 24 months data</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a
+              class="text-blue-600 items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-100 hover:bg-blue-50 w-full"
+              aria-label="#"
+              href="/register">Get started</a
+            >
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="grid items-center justify-center w-full grid-cols-1 p-6 lg:p-8 lg:grid-cols-2 bg-blue-500 rounded-t-3xl">
+          <div>
+            <h2 class="text-lg text-white">
+              Advanced plan <span
+                class="inline-flex items-center ml-3 px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-500">
+                Popular
+              </span>
+            </h2>
+            <p class="mt-4 text-sm text-white">
+              Suitable for those that want to grow like a rocket.
+            </p>
+          </div>
+          <div class="lg:ml-auto flex-col text-right">
+            <p class="text-5xl font-light tracking-tight text-white">
+              $<span x-text="annual ? '28.00' : '35.00'">35.00</span>
+            </p>
+            <p class="text-sm text-white">
+              per month <span x-cloak x-show="annual">(billed annually)</span>
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-8 bg-blue-500 rounded-b-3xl">
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+            <ul
+              role="list"
+              class="order-last mt-10 flex flex-col gap-y-3 text-sm text-white">
+              <li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Connect unlimited websites</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">15 bank accounts</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Track 200 credit cards</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Analytics support</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Export 24 months data</span>
+              </li>
+            </ul>
+            <ul
+              role="list"
+              class="order-last mt-3 lg:mt-10 flex flex-col gap-y-3 text-sm text-white">
+              <li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Connect unlimited websites</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">15 bank accounts</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Track 200 credit cards</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Analytics support</span>
+              </li><li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                  <path d="M9 12l2 2l4 -4"></path>
+                </svg><span class="ml-4">Export 24 months data</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a
+              class="text-blue-600 items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-100 hover:bg-blue-50 w-full"
+              aria-label="#"
+              href="/register">Get started</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

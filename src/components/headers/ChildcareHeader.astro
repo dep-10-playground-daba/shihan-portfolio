@@ -1,0 +1,63 @@
+<section class="relative overflow-hidden dark:bg-[#0A0B10] h-screen bg-[url('/images/backgrounds/bg-subtle-1-light-800w.jpg')]  dark:bg-[url('/images/backgrounds/bg-main-dark-2400w.jpg')] dark:lg:bg-[url('/images/backgrounds/bg-main-dark-24000w.jpg')] bg-no-repeat lg:bg-cover dark:bg-left-top bg-right-top">
+  <div
+    class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 items-center ">
+    <div class="items-start gap-12 grid grid-cols-1 md:grid-cols-2">
+      <div>
+        <div>
+          <h2 class="inline-flex items-center text-blue-600">
+            <span class="text-base font-medium tracking-tight">Header</span>
+          </h2>
+          <h2
+            class="text-purple-900 dark:text-slate-300 font-semibold mt-6 text-4xl lg:text-7xl tracking-tighter">
+            Childcare
+            <span class="lg:block"> Desktop App</span>
+          </h2>
+          <div id="typed-strings">
+            <p class="text-slate-500 dark:text-blue-300 text-lg mt-5">
+              This web application effectively facilitated the coordination of child vaccinations and weight recordings, 
+              ensuring seamless communication between parents, healthcare professionals, and administrative staff.
+              
+            </p>
+          </div>
+          <div class="lg:mt-10"><span id="typed" class="text-slate-500 dark:text-blue-300 text-lg font-bold"></span></div>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-3">
+          <a
+            class="text-white items-center font-medium gap-3 inline-flex focus-visible:outline-2 focus-visible:outline-offset-2 focus:outline-none justify-center px-6 lg:px-8 ring-2 ring-transparent focus:ring-offset-2 focus:ring-blue-500 duration-200 py-3.5 rounded-full active:bg-blue-800 active:text-white bg-blue-500 hover:bg-blue-600 w-auto"
+            href="#features">
+            Explore all Features
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:mt-0 mt-12 lg:ml-auto">
+        <div class="max-w-[366px]">
+          <img
+            class="drop-shadow-2xl rotate-6 rounded-[10px]"
+            src="/images/work/childcare/childcare-login.png"
+            alt="thumbnail"
+          />
+          <img
+            src="/images/work/childcare/childcare-features.png"
+            alt="thumbnail"
+            class="-mt-12 lg:-ml-24 -rotate-6 drop-shadow-2xl rounded-[10px]"
+          />
+          <img
+            src="/images/work/childcare/childcare-home.png"
+            alt="thumbnail"
+            class="-mt-12 lg:-mr-24 rotate-6 drop-shadow-2xl rounded-[10px]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  import Typed from 'typed.js';
+
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed:50,
+    loop:false,
+  });
+</script>

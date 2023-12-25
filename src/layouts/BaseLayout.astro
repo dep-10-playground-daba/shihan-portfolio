@@ -1,0 +1,81 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Navigation from "../components/global/Navigation.astro";
+import Footer from "../components/global/Footer.astro";
+import { AstroSeo } from "@astrolib/seo";
+
+const siteUrl = "https://shihanvidulanka.com";
+const seoName = "Shihan Vidulanka";
+const seoDescription = `I'm Shihan Vidulanka, a final-year Computer Science Engineering student at the University of Moratuwa
+crafting innovative solutions using Java, Python, and JavaScript. Welcome to my digital space, where code meets creativity!`;
+const ogImage = `${siteUrl}/images/logo/shihan-vidulanka-og.png`;
+const { title } = Astro.props;
+---
+
+<html
+  lang="en"
+  class="scroll-smooth selection:bg-blue-500 selection:text-white">
+  <head>
+    <BaseHead />
+    <AstroSeo
+          title={title}
+          titleTemplate="%s | Shihan Vidulanka" 
+          description={seoDescription}
+          canonical="https://shihanvidulanka.com/"
+          openGraph={{
+            url: "https://shihanvidulanka.com/",
+            title: seoName,
+            description: seoDescription,
+            images: [
+              {
+                url: "/images/logo/shihan-vidulanka-og.png",
+                width: 1200,
+                height: 630,
+                alt: "Social open graph",
+                type: "image/jpeg",
+              },
+              {
+                url: "/images/logo/shihan-vidulanka-og.png",
+                width: 4096,
+                height: 4096,
+                alt: "Twitter open graph",
+                type: "image/jpeg",
+              },
+              { url: "/images/logo/shihan-vidulanka-og.png" },
+              { url: "/images/logo/shihan-vidulanka-og.png" },
+            ],
+            site_name: "Shihan Vidulanka",
+          }}
+          twitter={{
+            handle: "@TwitterHandle",
+            site: "@site",
+            cardType: "summary_large_image",
+          }}
+    />
+  </head>
+
+  <body class=" dark:bg-[#0A0B10]">
+    <Navigation />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<script is:inline>
+  const theme = (() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
+
+  if (theme === "light") {
+    document.documentElement.classList.remove("dark");
+  } else {
+    document.documentElement.classList.add("dark");
+  }
+  window.localStorage.setItem("theme", theme);
+</script>
