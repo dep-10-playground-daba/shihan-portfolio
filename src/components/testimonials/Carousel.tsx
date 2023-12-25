@@ -18,7 +18,7 @@ function Carousel() {
   return (
     <div>
       {/* Carousel content */}
-      <div style={{display: currentSlide === 0 ? 'block' : 'none'}}>
+      <div style={{ display: currentSlide === 0 ? 'block' : 'none' }}>
         {/* Slide 1 content */}
         <div className="bg-slate-50 p-4 rounded-2xl">
           <ul role="list" className="grid grid-cols-1 gap-4 list-none lg:pr-12">
@@ -48,8 +48,8 @@ function Carousel() {
           </ul>
         </div>
       </div>
-      <div style={{display: currentSlide === 1 ? 'block' : 'none'}}>
-      <div className="bg-slate-50 p-4 rounded-2xl">
+      <div style={{ display: currentSlide === 1 ? 'block' : 'none' }}>
+        <div className="bg-slate-50 p-4 rounded-2xl">
           <ul role="list" className="grid grid-cols-1 gap-4 list-none lg:pr-12">
             <li>
               <div>
@@ -77,8 +77,8 @@ function Carousel() {
           </ul>
         </div>
       </div>
-      <div style={{display: currentSlide === 2 ? 'block' : 'none'}}>
-      <div className="bg-slate-50 p-4 rounded-2xl">
+      <div style={{ display: currentSlide === 2 ? 'block' : 'none' }}>
+        <div className="bg-slate-50 p-4 rounded-2xl">
           <ul role="list" className="grid grid-cols-1 gap-4 list-none lg:pr-12">
             <li>
               <div>

@@ -1,17 +1,35 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { AstroSeo } from "@astrolib/seo";
-import ChildcareHeader from "../../components/headers/ChildcareHeader.astro";
-import ChildcareFeaturesTwo from "../../components/features/ChildcareFeaturesTwo.astro";
+import ProjectHeader from "../../components/headers/ProjectHeader.astro";
+import ChildcareFeaturesTwo from "../../components/projects/ChildcareFeaturesTwo.astro";
 import VideoPlayer from "../../components/VideoPlayer";
 
+const title = "Childcare";
+const subtitle = "Desktop App";
+const description =
+  "This web application effectively facilitated the coordination of child vaccinations and weight recordings";
+const image1 = "/images/work/childcare/childcare-login.png";
+const image2 = "/images/work/childcare/childcare-features.png";
+const image3 = "/images/work/childcare/childcare-home.png";
 ---
 
 <!---
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
-
 <BaseLayout title="Childcare App">
-  <ChildcareHeader/>
-  <ChildcareFeaturesTwo client:load/>
+  <ProjectHeader
+    title={title}
+    ,
+    subtitle={subtitle}
+    ,
+    description={description}
+    ,
+    image1={image1}
+    ,
+    image2={image2}
+    ,
+    image3={image3}
+  />
+  <ChildcareFeaturesTwo client:load />
 </BaseLayout>
