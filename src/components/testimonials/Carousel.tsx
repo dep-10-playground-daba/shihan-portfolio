@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'preact/hooks';
+import * as React from 'react';
+import { useEffect, useState } from 'react';
 
 function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,29 +18,29 @@ function Carousel() {
   return (
     <div>
       {/* Carousel content */}
-      <div style={{display: currentSlide === 0 ? 'block' : 'none'}}>
+      <div style={{ display: currentSlide === 0 ? 'block' : 'none' }}>
         {/* Slide 1 content */}
-        <div class="bg-slate-50 p-4 rounded-2xl">
-          <ul role="list" class="grid grid-cols-1 gap-4 list-none lg:pr-12">
+        <div className="bg-slate-50 p-4 rounded-2xl">
+          <ul role="list" className="grid grid-cols-1 gap-4 list-none lg:pr-12">
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-lg lg:text-xl">Weeks <span class="lg:block">to minutes</span></p>
+                <p className="font-semibold text-purple-900 text-lg lg:text-xl">Weeks <span className="lg:block">to minutes</span></p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm">Reduction in customer onboarding time</div>
+              <div className="mt-2 text-slate-500 text-sm">Reduction in customer onboarding time</div>
             </li>
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-lg lg:text-xl">2-5x <span class="lg:block">faster</span></p>
+                <p className="font-semibold text-purple-900 text-lg lg:text-xl">2-5x <span className="lg:block">faster</span></p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm">Fast reconciliation with a single report</div>
+              <div className="mt-2 text-slate-500 text-sm">Fast reconciliation with a single report</div>
             </li>
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-sm">Products used</p>
+                <p className="font-semibold text-purple-900 text-sm">Products used</p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm inline-flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-3">
-                  <path class="stroke-purple-500" stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"></path>
+              <div className="mt-2 text-slate-500 text-sm inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4 mr-3">
+                  <path className="stroke-purple-500" stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"></path>
                 </svg>
                 Deployments
               </div>
@@ -47,28 +48,28 @@ function Carousel() {
           </ul>
         </div>
       </div>
-      <div style={{display: currentSlide === 1 ? 'block' : 'none'}}>
-      <div class="bg-slate-50 p-4 rounded-2xl">
-          <ul role="list" class="grid grid-cols-1 gap-4 list-none lg:pr-12">
+      <div style={{ display: currentSlide === 1 ? 'block' : 'none' }}>
+        <div className="bg-slate-50 p-4 rounded-2xl">
+          <ul role="list" className="grid grid-cols-1 gap-4 list-none lg:pr-12">
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-lg lg:text-xl">Weeks <span class="lg:block">to minutes</span></p>
+                <p className="font-semibold text-purple-900 text-lg lg:text-xl">Weeks <span className="lg:block">to minutes</span></p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm">Reduction in customer onboarding time</div>
+              <div className="mt-2 text-slate-500 text-sm">Reduction in customer onboarding time</div>
             </li>
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-lg lg:text-xl">2-5x <span class="lg:block">faster</span></p>
+                <p className="font-semibold text-purple-900 text-lg lg:text-xl">2-5x <span className="lg:block">faster</span></p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm">Fast reconciliation with a single report</div>
+              <div className="mt-2 text-slate-500 text-sm">Fast reconciliation with a single report</div>
             </li>
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-sm">Products used</p>
+                <p className="font-semibold text-purple-900 text-sm">Products used</p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm inline-flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-3">
-                  <path class="stroke-purple-500" stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"></path>
+              <div className="mt-2 text-slate-500 text-sm inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4 mr-3">
+                  <path className="stroke-purple-500" stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"></path>
                 </svg>
                 Deployments
               </div>
@@ -76,28 +77,28 @@ function Carousel() {
           </ul>
         </div>
       </div>
-      <div style={{display: currentSlide === 2 ? 'block' : 'none'}}>
-      <div class="bg-slate-50 p-4 rounded-2xl">
-          <ul role="list" class="grid grid-cols-1 gap-4 list-none lg:pr-12">
+      <div style={{ display: currentSlide === 2 ? 'block' : 'none' }}>
+        <div className="bg-slate-50 p-4 rounded-2xl">
+          <ul role="list" className="grid grid-cols-1 gap-4 list-none lg:pr-12">
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-lg lg:text-xl">Weeks <span class="lg:block">to minutes</span></p>
+                <p className="font-semibold text-purple-900 text-lg lg:text-xl">Weeks <span className="lg:block">to minutes</span></p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm">Reduction in customer onboarding time</div>
+              <div className="mt-2 text-slate-500 text-sm">Reduction in customer onboarding time</div>
             </li>
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-lg lg:text-xl">2-5x <span class="lg:block">faster</span></p>
+                <p className="font-semibold text-purple-900 text-lg lg:text-xl">2-5x <span className="lg:block">faster</span></p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm">Fast reconciliation with a single report</div>
+              <div className="mt-2 text-slate-500 text-sm">Fast reconciliation with a single report</div>
             </li>
             <li>
               <div>
-                <p class="font-semibold text-purple-900 text-sm">Products used</p>
+                <p className="font-semibold text-purple-900 text-sm">Products used</p>
               </div>
-              <div class="mt-2 text-slate-500 text-sm inline-flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-3">
-                  <path class="stroke-purple-500" stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"></path>
+              <div className="mt-2 text-slate-500 text-sm inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-4 h-4 mr-3">
+                  <path className="stroke-purple-500" stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"></path>
                 </svg>
                 Deployments
               </div>
