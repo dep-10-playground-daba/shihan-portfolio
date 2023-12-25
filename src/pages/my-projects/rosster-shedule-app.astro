@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { AstroSeo } from "@astrolib/seo";
+import ProjectHeader from "../../components/headers/ProjectHeader.astro";
+import RoosterShedular from "../../components/projects/RoosterShedular.astro";
+import VideoPlayer from "../../components/VideoPlayer";
+
+const title = "Cedar247";
+const subtitle = "Desktop / Mobile";
+const description =
+  `Doing manually roster scheduling for doctors is, time consuming and very complicated.
+  Luckily ...😍 It is not a day dream any more Our Application is simple and smart solution for that barriers.`;
+const image1 = "/images/work/roster/create-shedule.png";
+const image2 = "/images/work/roster/doctor-dashboard.png";
+const image3 = "/images/work/roster/wards.png";
+---
+
+<!---
+Use AstroSeo in all the pages you want different Seo than the index page
+-->
+<BaseLayout title="Cedar247 App">
+  <ProjectHeader
+    title={title}
+    ,
+    subtitle={subtitle}
+    ,
+    description={description}
+    ,
+    image1={image1}
+    ,
+    image2={image2}
+    ,
+    image3={image3}
+  />
+  <RoosterShedular client:load />
+</BaseLayout>

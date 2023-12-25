@@ -1,0 +1,418 @@
+---
+import VideoPlayer from "../VideoPlayer";
+
+---
+
+<div class="dark:bg-[#0A0B10]  bg-[url('/images/backgrounds/bg-subtle-1-light-1440w-flipped.jpg')]  dark:bg-[url('/images/backgrounds/bg-main-dark-2400w.jpg')] dark:lg:bg-[url('/images/backgrounds/bg-footer-dark-800w.jpg')] bg-no-repeat lg:bg-cover dark:bg-right-top bg-left-bottom">
+  <section class="">
+    <div
+      class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 items-center">
+      <div>
+        <h2
+          class="text-purple-900 dark:text-slate-300 font-semibold tracking-tighter lg:text-5xl text-3xl">
+          Significant of the project
+        </h2>
+        <div class="max-w-xl md:max-w-6xl mt-6">
+          <p class="text-slate-600 dark:text-slate-400">
+            Manual roster scheduling is a time-consuming challenge, 
+            and our innovative solution addresses this head-on. 
+            By applying constraint satisfaction principles, we've streamlined the process, 
+            saving valuable time for medical professionals and administrators.
+          </p>
+          <VideoPlayer BubuttonCenterColor="#0A2F87" buttonPddingColor="#529DE1" videoUrl="/images/work/roster/videos/roster-intro.mp4" coverUrl="/images/work/roster/rooster-front.jpg" client:load />
+          <p class="text-slate-600 mt-8 dark:text-slate-400">
+            The proposed system is a rooster scheduling application for scheduling the doctors who 
+            are working in a hospital. Most applications in the outside world do the scheduling in 
+            manually therefore they are time consuming and not efficient. So, the developers are 
+            mainly focused on automating the scheduling shifts. To expand the contribution of the 
+            administrators for scheduling developers added the ability to add the constraints to make 
+            the schedule. That improves the adaptability of the scheduling purpose. Developers are 
+            targeting to produce user-friendly, automated, and efficient rooster scheduling application. 
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <div
+      class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 items-center">
+      <div>
+        <h2
+          class="text-purple-900 dark:text-slate-300 font-semibold tracking-tighter lg:text-5xl text-3xl">
+          Constraints of the project
+        </h2>
+        <div class="max-w-xl md:max-w-6xl mt-6">
+          <p class="text-slate-600 dark:text-slate-400">
+            <ul class=" ml-4 list-disc">
+              <li class="text-slate-600 dark:text-slate-400">Since this is a web-based application active internet connection is required.</li>
+              <li class="text-slate-600 dark:text-slate-400">Doctors should give their requirements for the next month schedule one week before the 
+                next month begins. </li>
+            </ul>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section id="features" class="">
+  <div
+    class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 items-center">
+    <div class="max-w-xl">
+      <h2
+        class="text-purple-900 dark:text-slate-300 font-semibold tracking-tighter lg:text-5xl mt-6 text-3xl">
+        All Features 
+      </h2>
+    </div>
+    
+    <!-- <div class="max-w-xl">
+      <h2 class="inline-flex items-center text-blue-600">
+        <span class="text-base font-medium tracking-tight">Feature</span>
+      </h2>
+
+      <h2
+        class="text-purple-900 font-semibold tracking-tighter lg:text-5xl mt-6 text-3xl">
+        Build clean clean landing pages with Spazio Bianco
+      </h2>
+      <div class="max-w-xl mt-6">
+        <p class="text-slate-500">
+          Secure access to users’ financial data enables you to streamline
+          common processes, such as onboarding and creditcard, and build new
+          products to help users manage their finances. Because Financial
+          Connections is fully interoperable with the rest of lexington, it’s
+          easy to connect to users’ accounts to improve creditcard and product
+          experiences.
+        </p>
+      </div>
+    </div> -->
+      <ul
+        role="list"
+        class="grid grid-cols-1  gap-24 list-none lg:gap-24 mt-6 lg:mt-24">
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="">
+            <div>
+              <p class="font-semibold text-purple-900 dark:text-slate-300 text-2xl">Create a ward</p>
+            </div>
+            <div class="mt-2 h-full flex flex-col lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+              <p class="block">
+                Administrator can create a new ward and add it to the system. Admin should define the 
+                constraints to create schedule of that new ward. First admin should enter the information 
+                of the ward such as;
+              </p>
+              <ul class="ml-12 list-disc">
+                <li>name</li>
+                <li>ward number</li>
+                <li>doctor category</li>
+                <li>number of shifts </li>
+                <li>start and end of shifts </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="/images/work/roster/add ward.png"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="md:order-2">
+              <div>
+                <p class="font-semibold text-purple-900 text-2xl dark:text-slate-300">
+                Set Constraints
+                </p>
+              </div>
+              <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+               <p> 
+                Constraints can be added by the administration;
+               </p>
+               <ul class=" list-disc">
+                <li>max no of leaves</li>
+                <li>no of consecutiveshift</li>
+                <li>Casualty days</li>
+                <li>Vacations after consecetive shifts</li>
+              </ul>
+              </div>
+          </div>
+          <img
+            src="/images/work/roster/add-constraints.png"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="">
+            <div>
+              <p class="font-semibold text-purple-900 dark:text-slate-300 text-2xl">Add a Doctor/Consulatant</p>
+            </div>
+            <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+              <p class="block">
+                Admin can add basic infomations of a doctor as well as a Consultant and create them a account.
+                followinfs can be add when creating those accounts
+              </p>
+              <ul class=" list-disc">
+                <li>name</li>
+                <li>catergory</li>
+                <li>email</li>
+                <li>contact number</li>
+                <li>default ward</li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="/images/work/roster/add-doctor.png"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="md:order-2">
+              <div>
+                <p class="font-semibold text-purple-900 text-2xl dark:text-slate-300">
+                  View Ward
+                </p>
+              </div>
+              <div class="mt-12 flex h-full lg:text-2xl justify-center items-start align-center text-slate-700 dark:text-slate-400">
+               <p> 
+                Admins can view a specific ward and change the infor mations related to the word by clicking a
+                view button on the dashboard
+                <br>
+                and also the consultants can see the details of doctors by clicking on a docktor.
+               </p>
+              </div>
+          </div>
+          <img
+            src="/images/work/roster/view-doctors-wards.jpg"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="">
+            <div>
+              <p class="font-semibold text-purple-900 dark:text-slate-300 text-2xl">Create schedules.</p>
+            </div>
+            <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+              <p class="block">
+                first consultant 
+                needs to be added the constraints such as number of doctors needed per day and define 
+                which doctor category is needed and who are the home officers etc. then consultant can 
+                create the schedule automatically and it will be added to the database. 
+                  
+              </p>
+            </div>
+          </div>
+          <img
+            src="/images/work/roster/create-shedule.png"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="md:order-2">
+              <div>
+                <p class="font-semibold text-purple-900 text-2xl dark:text-slate-300">
+                  View schedule as a consultant.
+                </p>
+              </div>
+              <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+               <p> 
+                Consultant can view the schedules which they are created before. In default schedule of the 
+                current month is displayed in the home page of the consultant and consultant can also view 
+                the previous and next month schedule by selecting the corresponding month from the 
+                calendar. 
+               </p>
+              </div>
+          </div>
+          <img
+            src="/images/work/roster/view-shedule-as-consulatant.jpg"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="">
+            <div>
+              <p class="font-semibold text-purple-900 dark:text-slate-300 text-2xl">Set deadline for the schedule. </p>
+            </div>
+            <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+              <p class="block">
+                Doctors should submit their requirements on or before creating the schedule for the next 
+                month. Otherwise, those requirements are do not consider when creating the schedule. 
+                Then the consultant defines a deadline for them to submit their requirements. Therefore, 
+                consultant can be able to set a deadline. 
+                  
+              </p>
+            </div>
+          </div>
+          <img
+            src="/images/work/roster/set-deadlines.png"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="md:order-2">
+              <div>
+                <p class="font-semibold text-purple-900 text-2xl dark:text-slate-300">
+                  Define his/her requirements for the schedule.
+                </p>
+              </div>
+              <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+               <p> 
+                Doctors need to request before take a leave on next month 
+                and need to get approval from consultant through the system.
+                system provides a form to that task.
+               </p>
+              </div>
+          </div>
+          <img
+            src="/images/work/roster/defining-requirement-shift.jpg"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="">
+            <div>
+              <p class="font-semibold text-purple-900 dark:text-slate-300 text-2xl">View schedule as a doctor.</p>
+            </div>
+            <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+              <p class="block">
+                Doctors can view their leaves, shedules in week or monthly base.and also the individual shedule details
+                by clicking on a shedule. 
+                  
+              </p>
+            </div>
+          </div>
+          <img
+            src="/images/work/roster/view-shedule-doctor.jpg"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="md:order-2">
+              <div>
+                <p class="font-semibold text-purple-900 text-2xl dark:text-slate-300">
+                  Login and change password
+                </p>
+              </div>
+              <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+               <p> 
+                User can login with his own username password and security of the data related to the individuals are protected.
+              </div>
+          </div>
+          <img
+            src="/images/work/roster/change-password.png"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+        
+        <li class="grid md:grid-cols-2 justify-center gap-12 h-[70vh]">
+          <div class="">
+            <div>
+              <p class="font-semibold text-purple-900 dark:text-slate-300 text-2xl">Swapping Shedule</p>
+            </div>
+            <div class="mt-12 flex flex-col h-full lg:text-2xl justify-start items-center align-center text-slate-700 dark:text-slate-400">
+              <p class="block">
+                In some cases the doctors has to change their shedule due to unforeseen personal matters.
+                So the system is allow to make an mutual swapping of the shedules after getting the approval of the consultants.  
+                  
+              </p>
+            </div>
+          </div>
+          <img
+            src="/images/work/roster/swapping-shedule.jpg"
+            alt="thumbnail"
+            class="shadow-xl rounded-4xl mt-12"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="">
+  <div
+    class="mx-auto max-w-7xl lg:px-16 md:px-12 px-8 xl:px-24 py-24 items-center">
+    <div> 
+      <div class="mt-1">
+        <h2
+        class="text-purple-900 dark:text-slate-300 font-semibold tracking-tighter lg:text-5xl text-3xl">
+        Coloborators
+      </h2>
+      </div>
+    </div>
+    <div class="mx-auto text-center lg:text-left mt-12">
+      <div>
+        <div class="gap-x-2 gap-y-14 lg:gap-12 grid grid-cols-1 lg:grid-cols-3">
+          <div>
+            <div class="space-y-3">
+              <div class="lg:inline-flex lg:items-center lg:gap-3">
+                <div
+                  class="flex items-center justify-center w-8 h-8 text-blue-500 rounded-full bg-slate-100">
+                  <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+                    ></path>
+                  </svg> -->
+                  <img src="/images/coloborators/vinojith-krishna-profile.jpg" class="rounded-full" alt="sahan-image">
+                </div>
+                <p class="mt-5 font-semibold text-purple-900 dark:text-slate-400 lg:mt-0">
+                  Vinojith krisna
+                </p>
+              </div>
+              <p class="text-sm text-slate-600 mt-5 dark:text-slate-400">
+                Undergraduate from Department of Computer Scinece Engineering.
+              </p>
+              <p class="text-sm text-slate-600 mt-5 dark:text-slate-400">
+                University of Moratuwa
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="space-y-3">
+              <div class="lg:inline-flex lg:items-center lg:gap-3">
+                <div
+                  class="flex items-center justify-center w-8 h-8 text-blue-500 rounded-full bg-slate-100">
+                  <img src="/images/coloborators/hasini-vijayarathna-profile.jpg" class="rounded-full" alt="thamindu-image">
+
+                </div>
+                <p class="mt-5 font-semibold text-purple-900  dark:text-slate-400 lg:mt-0">
+                  Hasini Vijayarathna
+                </p>
+              </div>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-5">
+                Undergraduate from Department of Computer Scinece Engineering.
+              </p>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mt-5">
+                University of Moratuwa
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
