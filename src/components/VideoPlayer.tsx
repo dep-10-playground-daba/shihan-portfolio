@@ -1,3 +1,4 @@
+import * as React from "react";
 import ReactPlayer1 from "react-player";
 
 const ReactPlayer = typeof ReactPlayer1 === 'function' ? ReactPlayer1 : ReactPlayer1.default;
