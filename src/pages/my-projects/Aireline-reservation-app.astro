@@ -1,17 +1,36 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { AstroSeo } from "@astrolib/seo";
-import ChildcareHeader from "../../components/headers/ChildcareHeader.astro";
-import ChildcareFeaturesTwo from "../../components/projects/ChildcareFeaturesTwo.astro";
-import VideoPlayer from "../../components/VideoPlayer";
+import AirelineReservation from "../../components/projects/AirelineReservation.astro";
+import ProjectHeader from "../../components/headers/ProjectHeader.astro";
 
+const title = "Aireline Reservation";
+const subtitle = "Desktop App";
+const description = 
+  `This project revolves around the dual focal points of efficiently managing flight schedules and systematically generating reports for B Airways. By optimizing scheduling and enhancing reporting processes,
+the aim is to elevate operational efficiency and provide essential insights for informed decision-making by the airline's management.
+`;
+const image1 = "/images/work/airelineReservation/reports.png";
+const image2 = "/images/work/airelineReservation/login.png";
+const image3 = "/images/work/airelineReservation/view-all-flight-details-home.png";
 ---
 
 <!---
 Use AstroSeo in all the pages you want different Seo than the index page
 -->
-
 <BaseLayout title="Childcare App">
-  <ChildcareHeader/>
-  <ChildcareFeaturesTwo client:load/>
+  <ProjectHeader
+    title={title}
+    ,
+    subtitle={subtitle}
+    ,
+    description={description}
+    ,
+    image1={image1}
+    ,
+    image2={image2}
+    ,
+    image3={image3}
+  />
+  <AirelineReservation client:load />
 </BaseLayout>
